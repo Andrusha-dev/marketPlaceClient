@@ -1,0 +1,602 @@
+figure {
+    background: brown;
+    border: 2px solid forestgreen;
+    text-align: center;
+}
+figcaption {
+    background: cadetblue;
+
+}
+
+input:disabled {
+    border: 1px solid forestgreen;
+    border-radius: 4px;
+    box-shadow: -4px -5px 5px lightslategray;
+    outline: none;
+}
+
+#box {
+    width: 500px;
+    height: 300px;
+    background: forestgreen;
+}
+
+#content {
+    margin: auto auto;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 40px);
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+.background-container {
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(circle, yellow, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.decor-container {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background: darkgrey;
+}
+
+.decor-container::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #f06, transparent);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --font-size: 20px;
+    --main-color: red;
+    --secondary-color: green;
+}
+
+/*Use for reset property*/
+* {
+    /* for example
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    */
+}
+
+body {
+    margin: 0 0;
+    font-family: "Lato", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#left-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid royalblue;
+    width: 280px;
+    height: 100vh;
+    background: green;
+    overflow: scroll;
+}
+
+    #logo {
+        position: fixed;
+        border-bottom: 1px solid grey;
+        width: inherit;
+        height: 80px;
+        background: darkgreen;
+    }
+
+        #logo a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: inherit;
+            height: inherit;
+        }
+
+
+
+    #left-bar-container {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        width: inherit;
+        height: calc(100vh - 180px);
+        background: coral;
+        overflow: scroll;
+    }
+
+
+        .left-bar-container-item {
+            width: inherit;
+            height: min-content;
+            background: cadetblue;
+            font-size: 22px;
+        }
+
+            #left-bar-container span {
+
+            }
+
+            .bolt-title {
+                font-weight: bold;
+                color: darkblue;
+            }
+
+            #action {
+                border-bottom: 1px solid grey;
+            }
+
+                #action a {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0;
+                    width: inherit;
+                    height: inherit;
+                    background: blueviolet;
+                    color: blue;
+                }
+
+                #action a:hover {
+                    background: darkolivegreen;
+                    color: rgb(255, 255, 220);
+                }
+
+                    #action a img {
+                        margin-left: 2px;
+                        margin-right: 10px;
+                    }
+
+            #first-section {
+                border-bottom: 1px solid grey;
+            }
+
+                .expand {
+                    visibility: hidden;
+                    background-image: url("../img/arrow.png");
+                    background-repeat: no-repeat;
+                    background-size: 30px 30px;
+                    background-position: 15px 15px;
+                    border-left: 2px solid gray;
+                    height: 60px;
+                    width: 60px;
+                }
+
+
+                #first-section-category {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: aquamarine;
+                }
+
+                #first-section-category:hover {
+                    background: darkolivegreen;
+                    color: rgb(255, 255, 220);
+                }
+
+                    #first-section-category span {
+                        margin-left: 10px;
+                    }
+
+                #first-section a {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0;
+                    width: inherit;
+                    height: 36px;
+                    background: blueviolet;
+                    color: blue;
+                }
+
+                .left-bar-sprite {
+                    width: 23px;
+                    height: 23px;
+                    background-image: url("../img/sprites.png");
+                    background-size: 276px 252px;
+                    background-repeat: no-repeat;
+                    background-position: -114px -166px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                #first-section a:hover {
+                    background: darkolivegreen;
+                    color: rgb(255, 255, 220);
+                }
+
+                    #tv a div {
+                        background-position: -114px -166px;
+                    }
+
+                    #mobile a div {
+                        background-position: -58px -36px;
+                    }
+
+                    #furniture a div {
+                        background-position: -58px -100px;
+                    }
+
+                    #goods-plug1 a div{
+                        background-position: -87px -100px;
+                    }
+
+                    #goods-plug2 a div{
+                        background-position: -194px -132px;
+                    }
+
+                    #goods-plug3 a div{
+                        background-position: -166px -166px;
+                    }
+
+                    #goods-plug4 a div{
+                        background-position: -29px -66px;
+                    }
+
+                    #goods-plug5 a div{
+                        background-position: -194px -66px;
+                    }
+
+            #second-section {
+                border-bottom: 1px solid grey;
+            }
+
+                #second-section-category {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: aquamarine;
+                }
+
+                #second-section-category:hover {
+                    background: darkolivegreen;
+                    color: rgb(255, 255, 220);
+                }
+
+                    #second-section-category span {
+                        margin-left: 10px;
+                    }
+
+                #second-section a {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0;
+                    width: inherit;
+                    height: 36px;
+                    background: blueviolet;
+                    color: blue;
+                }
+
+                #second-section a:hover {
+                    background: darkolivegreen;
+                    color: rgb(255, 255, 220);
+                }
+
+                    #service1 a div {
+                        background-position: -140px -166px;
+                    }
+
+                    #service2 a div {
+                        background-position: -2px -166px;
+                    }
+
+                    #service3 a div {
+                        background-position: -58px -100px;
+                    }
+
+                    #service4 a div{
+                        background-position: -87px -100px;
+                    }
+
+                    #service5 a div{
+                        background-position: -194px -132px;
+                    }
+
+                    #service6 a div{
+                        background-position: -166px -166px;
+                    }
+
+                    #service7 a div{
+                        background-position: -29px -66px;
+                    }
+
+            #subscription {
+                border-bottom: 1px solid grey;
+            }
+
+                #subscription a {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0;
+                    width: inherit;
+                    height: inherit;
+                    background: blueviolet;
+                    color: blue;
+                }
+
+                #subscription a:hover {
+                    background: darkolivegreen;
+                    color: rgb(255, 255, 220);
+                }
+
+                   #subscription a span {
+                       margin-left: 10px;
+                   }
+
+    #simplify {
+        position: fixed;
+        top: calc(100vh - 100px);
+        left: 0;
+        border-top: 1px solid grey;
+        width: inherit;
+        height: 100px;
+        font-size: 40px;
+        color: darkblue;
+        background: darkgreen;
+    }
+
+        #button-container {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            width: inherit;
+            height: inherit;
+            background: cadetblue;
+        }
+
+        #button-container:hover {
+            background: darkgreen;
+            color: blanchedalmond;
+        }
+
+        #button-container:active {
+            background: darkgrey;
+        }
+
+            #button-container span {
+                margin-right: 30px;
+            }
+
+
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 280px;
+    height: 80px;
+    width: calc(100% - 280px);
+    background: orange;
+}
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        width: fit-content;
+        height: inherit;
+        background: aquamarine;
+    }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            width: min-content;
+            height: inherit;
+            background: cadetblue;
+        }
+
+        .menu-item:last-child {
+            margin-right: 0;
+        }
+
+            .menu-item a {
+                border: 1px solid brown;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: max-content;
+                height: inherit;
+                background: brown;
+                text-decoration: none;
+                font-size: 25px;
+                color: rebeccapurple;
+            }
+
+            .menu-item a:hover {
+                border: 1px solid grey;
+                border-radius: 10px;
+                color: blanchedalmond;
+                background: coral;
+            }
+
+            .menu-item a:active {
+                color: lightslategray;
+            }
+
+            .menu-item a:visited {
+                color: rebeccapurple;
+            }
+
+
+
+main {
+    margin-left: 280px;
+    min-height: calc(100vh - 180px);
+    width: calc(100% - 280px);
+    background: burlywood;
+    overflow: scroll;
+}
+
+
+
+#main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 280px;
+    height: 100px;
+    width: calc(100% - 280px);
+    background: rebeccapurple;
+}
+
+    #footer-container {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        width: min-content;
+        height: inherit;
+        color: azure;
+    }
+
+        #contacts {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            height: inherit;
+            margin-right: 30px;
+            font-size: 14px;
+            background: cadetblue;
+        }
+
+            #contacts div {
+                margin-right: 20px;
+                padding: 0;
+                font-size: 20px;
+                font-weight: bold;
+                width: max-content;
+
+            }
+
+            #contacts ul {
+                margin: 0;
+                padding-left: 26px;
+                width: 280px;
+                list-style-type: katakana;
+            }
+
+        #social-media {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            height: inherit;
+            font-size: 20px;
+            font-weight: bold;
+            background: brown;
+        }
+
+            .social-title {
+                margin-right: 20px;
+                width: max-content;
+
+            }
+
+            #social-media a {
+                margin-right: 20px;
+            }
+
+            #social-media a:last-child {
+                margin-right: 0;
+            }
+
+                .social-sprite {
+                    width: 46px;
+                    height: 46px;
+                    background-image: url("../img/sprites.png");
+                    background-repeat: no-repeat;
+                    background-size: 828px 756px;
+
+                }
+
+                #facebook {
+                    background-position: left top;
+                }
+
+                #twitter {
+                    background-position: -50px top;
+                }
+
+                #instagram {
+                    background-position: -100px top;
+                }
+
+                #google-plus {
+                    background-position: -150px top;
+                }
