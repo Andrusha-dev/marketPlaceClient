@@ -20,6 +20,7 @@ const secondArrow = secondSectionCategory.querySelector(".expand");
 
 const subscription = document.getElementById("subscription");
 const subscriptionLink = subscription.querySelector("a");
+//const containerBox = document.getElementsByClassName("decor-container");
 
 
 
